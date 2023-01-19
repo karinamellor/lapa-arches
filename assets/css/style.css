@@ -6,59 +6,21 @@
     border: none;
 }
 
-
-body {
-     font-family: Roboto;
-     font-weight: 300;
-     color: red;
-}
-
- /* heading and logo */
-
-h1, h2 {
-    font-family: Roboto;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: #252525;
-
-}
-
-#logo {
-    float: left;
-    font-size: 280%;
-}
-
- /* navigation links */
-
-#menu {
-    font-size: 110%;
-    letter-spacing: 4px;
-
-}
-
-#menu, #logo {
-     line-height: 75px;
-
-}
-
-
-#menu li {
-    float: right;
-    list-style-type: none;
-    margin-right: 30px;
-
-}
-
-menu a {
+div.scrollmenu {
+    background-color: #333;
+      overflow: auto;
+      white-space: nowrap;
+    }
+    
+    div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
     text-decoration: none;
-    color: inherit;
+    }
+    
+    div.scrollmenu a:hover {
+    background-color: #777;
+    }
 
-}
-
-#menu a:hover {
-     border-bottom: 1px solid #3a3a3a;
-}
-
-.active {
-    border-bottom: 1px solid #3a3a3a;
-}
