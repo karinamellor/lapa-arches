@@ -3,30 +3,33 @@
 
 /*Body*/
 
-.logo {
-
-   opacity: 0.8;
-   size: 50px;
-   margin-top: 10px;
-   text-align: center;
-}
-
-   
-
-
-
-
-
 body {
 
-background-color: gainsboro;
+background-color: rgb(116, 126, 158);
 background-position: 300px 200px;
 background-repeat: no-repeat;
 margin-left:50px;
 margin-right:50px;
 padding: 60x;
-
 font-family: 'Poppins';
+}
+
+
+.k-image {
+
+  background-image: url("/assets/images/lapa-image.jpg");
+  
+
+
+}
+
+
+
+#logo {
+   float: right;
+   text-align: center;
+   text-size-adjust: 20px;
+
 }
 
 
@@ -46,6 +49,19 @@ font-family: 'Poppins';
 
 
 }
+
+#shift {
+  
+  text-align: center;
+
+}
+
+
+
+
+
+
+
 
 
 
