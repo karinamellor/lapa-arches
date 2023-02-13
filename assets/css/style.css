@@ -6,29 +6,25 @@
 body {
 
 background-color: rgb(116, 126, 158);
-background-position: 300px 200px;
-background-repeat: no-repeat;
-margin-left:50px;
-margin-right:50px;
+margin: 10rem;
+margin-top: 10rem;
+margin-right:10rem;
+margin-bottom:10rem;
+margin-left: 10rem;
 padding: 60x;
 font-family: 'Poppins';
 }
 
 
-.k-image {
-
-  background-image: url("/assets/images/lapa-image.jpg");
-  
-
-
-}
 
 
 
-#logo {
+#h1 {
+  background-color: black;
+   color: white;
    float: right;
    text-align: center;
-   text-size-adjust: 20px;
+   text-size-adjust: 10px;
 
 }
 
@@ -51,24 +47,17 @@ font-family: 'Poppins';
 }
 
 #shift {
-  
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #e7691f;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: -1em;
   text-align: center;
 
 }
-
-
-
-
-
-
-
-
-
-
-main{
-
-}
-
 
 
 grid {
@@ -78,7 +67,7 @@ grid {
  }
  .grid > div {
    background: #EDE7F6;
-   padding: 1.5rem;
+   padding: 2.0rem;
    border-radius: 1rem;
  }
  body {
