@@ -1,64 +1,133 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
 
-/*Body*/
+:root{
+ --white: #f9f9f9;
+ --black: #36383f;
+ --gray: #85888c;
 
-body {
+}/* variables*/
 
-background-color: rgb(116, 126, 158);
-margin: 10rem;
-margin-top: 10rem;
-margin-right:10rem;
-margin-bottom:10rem;
-margin-left: 10rem;
-padding: 60x;
-font-family: 'Poppins';
+/* Reset */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-
-
-
-#h1 {
-  background-color: black;
-   color: white;
-   float: right;
-   text-align: center;
-   text-size-adjust: 10px;
-
+body{
+    background-color: var(--white);
+    font-family: "Poppins";
+}
+a{
+     text-decoration: none;
+}
+ul{
+     list-style: none;
 }
 
-
-
+/* Header */
 
 .header {
-   background-color:rgb(255, 255, 255);
-   margin: 20;
-   padding: 50px;
+    background-color: #171719;
+    box-sizing: 1px 1px 5px 0px gray;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+/* Logo*/
+
+.logo{
+   display: inline-block;
+   color: var(--white);
+   font-size: 60px;
+   margin-left: 10px;
 }
 
+/* Menu Icon */
 
-
-
-#k1 {
-   background-color: rgb(211, 207, 205);
-
-
+.hamb{
+  cursor: pointer;
+  float: right;
+  padding: 40px 20px;
 }
+/* Style label tag */
 
-#shift {
-  position: fixed;
+.hamb-line {
+  background: var(--white);
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+
+} 
+/* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after{
+  background: var(--white);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
   width: 100%;
-  top: 0;
-  left: 0;
-  background-color: #e7691f;
-  color: white;
-  font-family: Arial, sans-serif;
-  padding: -1em;
-  text-align: center;
-
+}
+.hamb-line::before{
+  top: 5px;
+}
+.hamb-line::after{
+  top: -5px;
 }
 
+.side-menu {
+  display: none;
+} /* Hide checkbox */
+
+/* Toggle menu icon */
+.side-menu:checked ~ nav{
+  max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+  background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+  transform: rotate(45deg);
+  top:0;
+}
+
+/* Responsiveness */
+@media  (min-width: 768px) {
+  .nav{
+    max-height: none;
+    top: 0;
+    position: relative;
+    float: right;
+    width: fit-content;
+    background-color: transparent;
+}
+
+
+  
+.menu li{
+      float: left;
+  }
+
+  .menu a:hover{
+      background-color: transparent;
+      color: var(--gray);
+
+  }
+
+  .hamb{
+      display: 
+  }
+}
 
 grid {
    display: grid;
@@ -91,4 +160,81 @@ grid {
 
 }
 
-   
+/* Footer */
+
+body{
+  margin:0;
+  overflow-x:hidden;
+  }
+  
+  .footer{
+  background: #171719;
+  padding:30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align:center;
+  }
+  
+  .footer .row{
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color:gray;
+  font-size:0.8em;
+  }
+  
+  .footer .row a{
+  text-decoration:none;
+  color:gray;
+  transition:0.5s;
+  }
+  
+  .footer .row a:hover{
+  color:#fff;
+  }
+  
+  .footer .row ul{
+  width:100%;
+  }
+  
+  .footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  }
+  
+  .footer .row a i{
+  font-size:2em;
+  margin:0% 1%;
+  }
+  
+  @media (max-width:720px){
+  .footer{
+  text-align:left;
+  padding:5%;
+  }
+  .footer .row ul li{
+  display:block;
+  margin:10px 0px;
+  text-align:left;
+  }
+  .footer .row a i{
+  margin:0% 3%;
+  }
+  }
+
+   /* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+
