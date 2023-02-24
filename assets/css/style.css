@@ -17,7 +17,7 @@
  }
  
  body{
-     background-color: var(--white);
+     background-color: #C6AC80;
      font-family: "Poppins";
  }
  a{
@@ -41,7 +41,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: #00BAF0;
-  background: linear-gradient(to left, #f46b45, #eea849);
+  background: linear-gradient(to left, #302e2e, #000000);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #FFF;
   height: 70px;
@@ -154,9 +154,9 @@
 }
 
 /* Image */
-.img {
+.lapa-arque {
    max-width: 100%;
-   height: auto;
+   height: 1000;
 }
 
 
@@ -168,11 +168,12 @@
 
  .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: no repeat;
     grid-gap: 1rem;
   }
   .grid > div {
-    background: #EDE7F6;
+    background: #0c0c0c;
+    -webkit-text-fill-color:    #fdfbff;
     padding: 2.0rem;
     border-radius: 1rem;
   }
