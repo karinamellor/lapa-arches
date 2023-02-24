@@ -1,166 +1,205 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
-
 :root{
- --white: #f9f9f9;
- --black: #36383f;
- --gray: #85888c;
+  --white: #f9f9f9;
+  --black: #36383f;
+  --gray: #85888c;
+ 
+ }
+ /* variables*/
+ 
+ /* Reset */
+ 
+ *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ 
+ body{
+     background-color: var(--white);
+     font-family: "Poppins";
+ }
+ a{
+      text-decoration: none;
+ }
+ ul{
+      list-style: none;
+ }
+ 
+ /* nav bar */
+ 
 
-}/* variables*/
-
-/* Reset */
-
-*{
-  margin: 0;
-  padding: 0;
+* {
+  font-family: "Raleway";
   box-sizing: border-box;
 }
 
-body{
-    background-color: var(--white);
-    font-family: "Poppins";
-}
-a{
-     text-decoration: none;
-}
-ul{
-     list-style: none;
-}
-
-/* Header */
-
-.header {
-    background-color: #171719;
-    box-sizing: 1px 1px 5px 0px gray;
-    position: sticky;
-    top: 0;
-    width: 100%;
-}
-/* Logo*/
-
-.logo{
-   display: inline-block;
-   color: var(--white);
-   font-size: 60px;
-   margin-left: 10px;
-}
-
-/* Menu Icon */
-
-.hamb{
-  cursor: pointer;
-  float: right;
-  padding: 40px 20px;
-}
-/* Style label tag */
-
-.hamb-line {
-  background: var(--white);
-  display: block;
-  height: 2px;
-  position: relative;
-  width: 24px;
-
-} 
-/* Style span tag */
-
-.hamb-line::before,
-.hamb-line::after{
-  background: var(--white);
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
-}
-.hamb-line::before{
-  top: 5px;
-}
-.hamb-line::after{
-  top: -5px;
-}
-
-.side-menu {
-  display: none;
-} /* Hide checkbox */
-
-/* Toggle menu icon */
-.side-menu:checked ~ nav{
-  max-height: 100%;
-}
-.side-menu:checked ~ .hamb .hamb-line {
-  background: transparent;
-}
-.side-menu:checked ~ .hamb .hamb-line::before {
-  transform: rotate(-45deg);
-  top:0;
-}
-.side-menu:checked ~ .hamb .hamb-line::after {
-  transform: rotate(45deg);
-  top:0;
-}
-
-/* Responsiveness */
-@media  (min-width: 768px) {
-  .nav{
-    max-height: none;
-    top: 0;
-    position: relative;
-    float: right;
-    width: fit-content;
-    background-color: transparent;
-}
-
-
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00BAF0;
+  background: linear-gradient(to left, #f46b45, #eea849);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #FFF;
+  height: 70px;
+  padding: 1em;
   
-.menu li{
-      float: left;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 700px) {
+  .menu-button-container {
+    display: flex;
   }
-
-  .menu a:hover{
-      background-color: transparent;
-      color: var(--gray);
-
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
-
-  .hamb{
-      display: 
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
   }
 }
 
-grid {
-   display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-   grid-gap: 1rem;
- }
- .grid > div {
-   background: #EDE7F6;
-   padding: 2.0rem;
-   border-radius: 1rem;
- }
- body {
-   margin: 2rem;
-   font: 13px system-ui;
- }
-
-
-#page-container {
-   position: relative;
-   min-height: 100vh;
+/* Image */
+.img {
+   max-width: 100%;
+   height: auto;
 }
 
-#content-wrap {
-  padding-bottom: 2.5rem;
 
-}
 
-#footer{
-   position:absolute
 
-}
 
-/* Footer */
+
+
+
+ .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem;
+  }
+  .grid > div {
+    background: #EDE7F6;
+    padding: 2.0rem;
+    border-radius: 1rem;
+  }
+  body {
+    margin: 2rem;
+    font: 22px system-ui;
+  }
+ 
+ 
+ #page-container {
+    position: relative;
+    min-height: 100vh;
+ }
+ 
+ #content-wrap {
+   padding-bottom: 2.5rem;
+ 
+ }
+ 
+ #footer{
+    position:absolute
+ 
+ }
+ 
+ /* Footer */
+ 
+ 
 
 body{
   margin:0;
@@ -168,7 +207,7 @@ body{
   }
   
   .footer{
-  background: #171719;
+  background:#000;
   padding:30px 0px;
   font-family: 'Play', sans-serif;
   text-align:center;
@@ -220,21 +259,26 @@ body{
   margin:0% 3%;
   }
   }
+  
+  
+ 
+ 
+ /* Screen Devices */
+ 
+ /* ----------- iPhone 4 and 4S ----------- */
+ 
+ /* Portrait and Landscape */
+ @media only screen 
+   and (min-device-width: 320px) 
+   and (max-device-width: 480px)
+   and (-webkit-min-device-pixel-ratio: 2) {
+   }
+ 
+   /* ----------- Laptop Non-Retina Screens ----------- */
+ @media screen 
+ and (min-device-width: 1200px) 
+ and (max-device-width: 1600px) 
+ and (-webkit-min-device-pixel-ratio: 1){
 
-   /* Style all font awesome icons */
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-}
-
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
-}
-
-/* Set a specific color for each brand */
-
+ } 
 
