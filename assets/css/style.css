@@ -11,15 +11,22 @@
  /* Reset */
  
  *{
-   margin: 0;
-   padding: 0;
+   margin: 8px;
+   margin-top: 0px;
+   margin-left: 0px;
+   margin-right: 0px;
+   padding: 8px;
    box-sizing: border-box;
+   
  }
  
  body{
      background-color: #C6AC80;
      font-family: "Poppins";
+    
+
  }
+
  a{
       text-decoration: none;
  }
@@ -35,6 +42,13 @@
   box-sizing: border-box;
 }
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+
 .top-nav {
   display: flex;
   flex-direction: row;
@@ -43,7 +57,7 @@
   background-color: #00BAF0;
   background: linear-gradient(to left, #302e2e, #000000);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #FFF;
+  color: #C6AC80;
   height: 70px;
   padding: 1em;
   
@@ -154,10 +168,13 @@
 }
 
 /* Image */
-.lapa-arque {
+.k1-container {
    max-width: 100%;
-   height: 1000;
+   min-width: 200px;
+   box-sizing: inherit;
+  height: auto;
 }
+
 
 
 
@@ -320,12 +337,47 @@ body{
    and (max-device-width: 480px)
    and (-webkit-min-device-pixel-ratio: 2) {
    }
- 
-   /* ----------- Laptop Non-Retina Screens ----------- */
+    
+   /* ----------- Galaxy S3 ----------- */
+
+   /* Portrait and Landscape */
+ @media screen 
+ and (device-width: 360px) 
+ and (device-height: 640px) 
+ and (-webkit-device-pixel-ratio: 2) {
+}
+
+ /* ----------- Laptop Non-Retina Screens ----------- */
  @media screen 
  and (min-device-width: 1200px) 
  and (max-device-width: 1600px) 
  and (-webkit-min-device-pixel-ratio: 1){
+  
 
+ 
  } 
+
+/* ----------- Retina Screens ----------- */
+ @media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+}
+
+
+
+
+
+
+
+ /* ----------- iPad 1, 2, Mini and Air ----------- */
+ 
+ /* Portrait and Landscape */
+ @media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+
+}
 
