@@ -1,11 +1,8 @@
 /* Font */
 
-
-@font-face {
-  font-family: 'Poppins';
-  src: url(../fonts//poppins);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
   
-}
+
 
   /* variables*/
  
@@ -169,7 +166,16 @@
   }
 }
 
-/* Image */
+button{
+  background-color: #C6AC80;
+   color: white;
+   font-size: 16px;
+   border-radius: 1rem;
+   border-color: #131212;
+
+}
+
+/* Image Lapa-image */
 .k1-container {
    max-width: 100%;
    min-width: 200px;
@@ -177,9 +183,28 @@
   height: auto;
 }
 
+img {
+  margin-right: 20px;
+
+}
+
+/* Gallery pictures */
+
+
+
+
+
 
 /* grid */
 
+element {
+  margin: 8px;
+  padding-left: 6px;
+  padding-right: 6px;
+  
+
+
+}
  .grid {
     display: grid;
     grid-template-columns: no repeat;
@@ -240,7 +265,7 @@ h4 {
  }
  
  input[type=submit] {
-   background-color: #C6AC80;
+   background-color: white;
    color: black;
    padding: 12px 20px;
    border: none;
@@ -249,7 +274,7 @@ h4 {
  }
  
  input[type=submit]:hover {
-   background-color: #ffffff;
+   background-color: #C6AC80;
  }
  
  .container {
