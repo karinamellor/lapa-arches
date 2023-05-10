@@ -8,7 +8,7 @@
  
  /* Reset */
  
- *{
+ .wrapper {
    margin: 8px;
    margin-top: 0px;
    margin-left: 0px;
@@ -177,17 +177,26 @@ button{
 }
 
 /* Image Lapa-image */
-.k1-container {
-   max-width: 100%;
-   min-width: 200px;
-   box-sizing: inherit;
+.container {
+  margin: 8px;
+  padding: 8px 6px 7px; /* shorthand for top, right, bottom padding */
+  box-sizing: border-box;
+}
+
+.container {
+   border: #ccc;
+
+
+}
+
+
+.k2-image {
+  width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
-img {
-  margin-right: 20px;
 
-}
 
 /* Gallery pictures */
 
@@ -202,6 +211,8 @@ img {
 column-1 img {
   width: 100%;
   height: auto;
+  
+
 }
 
 .column-1 {
