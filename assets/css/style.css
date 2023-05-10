@@ -275,7 +275,10 @@ element {
     display: grid;
     grid-template-columns: no repeat;
     grid-gap: 1rem;
+    background-color: rgba(255, 255, 255, 0.5); /* Set the background color with transparency */
+    padding: 20px; /* Add some padding for content visibility */
   }
+  
   .grid > div {
     background: #0c0c0c;
     -webkit-text-fill-color: #C6AC80;
