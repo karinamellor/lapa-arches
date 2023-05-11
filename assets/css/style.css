@@ -281,8 +281,7 @@ element {
 
 
   .grid > div {
-    background: #0c0c0c;
-    -webkit-text-fill-color: #C6AC80;
+   -webkit-text-fill-color: black;
     padding: 2.0rem;
     border-radius: 1rem;
   }

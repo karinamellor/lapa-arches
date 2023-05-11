@@ -14,9 +14,9 @@ The project was designed to spread information about an important monument of Br
 The theme chosen for the project was architecture, historical and monumental art.
 The aim of this website is to capture the interest of potential visitors of the structure in a straightforward and simple way.
 I chose to use colours that are not too heavy for the eyes and they are the following:
--White
--#fffffff  White.
--#08090C Black.
+- White
+- #fffffff  White.
+- #08090C Black.
 
 ##  User Expericence (UX)
 
