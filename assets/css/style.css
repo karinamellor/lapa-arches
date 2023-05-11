@@ -17,13 +17,14 @@
    padding: 6px;
    padding-top: 7px;
    box-sizing: border-box;
-   
+   background-color: rgba(255, 255, 255, 0.5); /* Set the background color with transparency */
+   padding: 20px; /* Add some padding for content visibility */
  }
+   
  
- body{
-     background-color: #C6AC80;
-     font-family: "Poppins";
-    }
+ 
+ 
+  
 
  a{
       text-decoration: none;
@@ -51,9 +52,9 @@
   align-items: center;
   justify-content: space-between;
   background-color: #00BAF0;
-  background: linear-gradient(to left, #302e2e, #000000);
+  background: linear-gradient(to left, #ffffff, #000000);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #C6AC80;
+  color: #fdfdfc;
   height: 70px;
   padding: 1em;
   
@@ -167,13 +168,12 @@
 }
 
 button{
-  background-color: #C6AC80;
-   color: white;
-   font-size: 16px;
-   border-radius: 1rem;
-   border-color: #131212;
-   
-
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border-radius: 1rem;
+  border-color: #131212;
+  opacity: 0.6;
 }
 
 /* Image Lapa-image */
@@ -277,8 +277,9 @@ element {
     grid-gap: 1rem;
     background-color: rgba(255, 255, 255, 0.5); /* Set the background color with transparency */
     padding: 20px; /* Add some padding for content visibility */
-  }
-  
+ }
+
+
   .grid > div {
     background: #0c0c0c;
     -webkit-text-fill-color: #C6AC80;
@@ -289,7 +290,16 @@ element {
     margin: 2rem;
     font: 22px system-ui;
   }
+
+  h2 {
+    text-align: center;
+
+  }
  
+  p{
+    text-align: center;
+
+  }
  
  #page-container {
     position: relative;
@@ -314,11 +324,12 @@ element {
  * {box-sizing: border-box;}
    
 label {
-   color: #fff;
+   color: #0e0d0d;
 }
 
 h4 {
-  color: #fff;
+  color: #000000;
+  text-align: center;
 
 }
 
@@ -334,7 +345,7 @@ h4 {
  }
  
  input[type=submit] {
-   background-color: white;
+   background-color: rgb(158, 158, 158);
    color: black;
    padding: 12px 20px;
    border: none;
@@ -343,14 +354,17 @@ h4 {
  }
  
  input[type=submit]:hover {
-   background-color: #C6AC80;
+   background-color: gray;
  }
  
  .container {
    border-radius: 5px;
    background-color: #08090C;
    padding: 20px;
+   background-color: rgba(255, 255, 255, 0.5); /* Set the background color with transparency */
+   padding: 20px; /* Add some padding for content visibility */
  }
+ 
 
 
 
@@ -365,19 +379,20 @@ body{
   padding:30px 0px;
   font-family: 'Play', sans-serif;
   text-align:center;
+  background: linear-gradient(to left, #ffffff, #000000);
   }
   
   .footer .row{
   width:100%;
   margin:1% 0%;
   padding:0.6% 0%;
-  color:gray;
+  color:rgb(14, 14, 14);
   font-size:0.8em;
   }
   
   .footer .row a{
   text-decoration:none;
-  color:gray;
+  color:rgb(15, 15, 15);
   transition:0.5s;
   }
   
