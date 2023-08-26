@@ -8,24 +8,6 @@
  
  /* Reset */
  
- .wrapper {
-   margin: 8px;
-   margin-top: 0px;
-   margin-left: 0px;
-   margin-right: 0px;
-   padding: 8px;
-   padding: 6px;
-   padding-top: 7px;
-   box-sizing: border-box;
-   background-color: rgba(255, 255, 255, 0.5); /* Set the background color with transparency */
-   padding: 20px; /* Add some padding for content visibility */
- }
-   
- 
- 
- 
-  
-
  a{
       text-decoration: none;
  }
@@ -40,9 +22,6 @@
   font-family: "Raleway";
   box-sizing: border-box;
 }
-
-
-
 
 /* Section */
 
@@ -176,32 +155,33 @@ button{
   opacity: 0.6;
 }
 
-/* Image Lapa-image */
-.container {
-  margin: 8px;
+.box {
+  background-color: pink;
+  width: 100%;
+  max-width: 97%;
+  margin: 10px;
   padding: 8px 6px 7px; /* shorthand for top, right, bottom padding */
+  height: auto;
   box-sizing: border-box;
 }
 
-.container {
-   border: #ccc;
-
-
-}
-
-.k2-image {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-}
 
 .texto {
   width: 50%; /* Define a largura dos textos */
   float: left; /* Faz com que os textos fiquem lado a lado */
-  padding: 20px; /* Adiciona um espaçamento interno */
+  padding: 100px; /* Adiciona um espaçamento interno */
   box-sizing: border-box; /* Inclui o padding na largura total */
   
 }
+
+.hero-image {
+  max-width: 100%;
+  padding: 50px 50px 50px;
+  height: auto;
+}
+
+
+
 
 
 
