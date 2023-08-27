@@ -9,6 +9,13 @@
 
 The project was designed to spread information about an important monument of Brazil that usually is not very considered by tourists, an architectural structure that had indeed a great importance for my country during its history.  The historical information is given in a simple and clear way on the main menu of the site. A gallery of pictures is included as well, together with a contact form, available to ask for information about the monument.
 
+## Project Goals
+
+- Primary goal should be to accurately and passionately present the history and significance of the Lapa Arches. Provide in-depth information about the origin, construction, architectural features, and historical events associated with the arches. Use a combination of text and images interactive elements to engage visitors and transport them back in time.
+
+- As a historic site, promote responsible tourism by providing information on ethical and respectful ways to visit the Lapa Arches. Include guidelines for behavior, respect for historical sites, and sustainable tourism practices.
+
+
 ## Theme
 
 The theme chosen for the project was architecture, historical and monumental art.
@@ -72,7 +79,7 @@ The website was viewed on a variety of devices such as Desktop, Laptop, iPhoneXR
 Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 ## Known Bugs
-No bugs found
+The form is not working properly when used it
 Deployment
 The project was deployed in GitHub.
 

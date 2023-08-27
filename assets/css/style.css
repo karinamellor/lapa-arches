@@ -179,22 +179,26 @@ div.desc {
 
 
   .grid > div {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
    -webkit-text-fill-color: black;
     padding: 2.0rem;
     border-radius: 1rem;
   }
+  
   body {
     margin: 2rem;
     font: 22px system-ui;
+    background-color: #ffffff;
   }
 
-  h2 {
+  h2{
     text-align: center;
 
   }
- 
-  p{
+
+
+
+  p {
     text-align: center;
 
   }
