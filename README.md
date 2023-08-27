@@ -1,5 +1,6 @@
 # Lapa Arches
-![Lapa aqueduct photo](https://github.com/karinamellor/lapa-arches/assets/74268139/b73d14a0-5eae-4b5f-a473-fa120e3a4c86)
+![Lapa aqueduct photo](https://github.com/karinamellor/lapa-arches/assets/74268139/03063ae1-2c2a-4b64-8471-f9bf9adcbcdb)
+
 
 - Deployment [Carioca Aqueduct](https://karinamellor.github.io/lapa-arches/).
 
